@@ -42,7 +42,7 @@ section {
 }
 .links {
   display: inline-flex;
-  padding: 20px;
+  padding: 0 40px;
 }
 .link1 {
   font-style: normal;
