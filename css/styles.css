@@ -350,6 +350,16 @@ section {
     top: 1562px;
     background: rgba(47, 48, 58, 0.8);
 }
+.bgimages-title{
+  font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand3-color);
+}
 .social-container{
   display: inline-flex;
   align-items: center;
