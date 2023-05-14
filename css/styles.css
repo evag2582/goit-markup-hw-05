@@ -119,11 +119,12 @@ section {
 .link1.active::after,
 .link2.active::after,
 .link3.active::after{
+  position: relative;
     display: inline-block;
     content: "";
     width: 100%;
     height: 4px;
-    top: 80px;
+    top: 6px;
     border-radius: 2px;
     background: var(--brand2-color);
 }
