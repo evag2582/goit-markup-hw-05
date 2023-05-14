@@ -87,7 +87,7 @@ section {
 .link3:focus,
 .contact1:focus,
 .contact2:focus,
-.contact3:focus {
+.contact3:focus{
   color: var(--brand2-color);
 }
 .contact1:focus .icon2,
@@ -437,6 +437,27 @@ section {
 .social-container2:focus .icon3 {
   fill: var(--brand3-color);
 }
+.contact1:hover .icon2,
+.contact2:hover .icon2 {
+  fill: var(--brand2-color);
+}
+/* .icon4 {
+    width: 30px;
+    height: 30px;
+    fill: var(--brand3-color);
+}
+.modal-close:hover {
+  background-color: var(--brand2-color);
+}
+.modal-close:hover .icon4 {
+  fill: var(--brand3-color);
+}
+.modal-close:focus {
+  background-color: var(--brand2-color);
+}
+.modal-close:focus .icon4 {
+  fill: var(--brand3-color);
+} */
 .contact1:hover .icon2,
 .contact2:hover .icon2 {
   fill: var(--brand2-color);
