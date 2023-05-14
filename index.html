@@ -44,9 +44,18 @@
       <div class="top">
         <section class="container title1">
           <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button class="button1" type="button">
+            <button data-modal-open class="button1" type="button">
             Solicite nuestro servicio
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-close" data-modal-close>
+                    <svg>
+                      <use href="./images/svg/icons.svg#close"></use>
+                    </svg>
+              </button>
+            </div>
+          </div>
         </section>
       </div>
       <section>
@@ -419,5 +428,6 @@
         </li>
               </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
