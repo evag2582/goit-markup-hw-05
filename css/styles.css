@@ -43,10 +43,17 @@ section {
 .links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 32px;
 }
-.link1 {
+.links2 {
+  width: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -55,43 +62,20 @@ section {
   color: var(--brand-color);
   text-decoration: none;
 }
-.link2 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--brand-color);
-  text-decoration: none;
-}
-.link3 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--brand-color);
-  text-decoration: none;
-  margin: auto;
-}
-.link1:hover,
-.link2:hover,
-.link3:hover,
+.link:hover,
 .contact1:hover,
 .contact2:hover,
 .contact3:hover {
   color: var(--brand2-color);
 }
-.link1:focus,
-.link2:focus,
-.link3:focus,
+.link:focus,
 .contact1:focus,
 .contact2:focus,
 .contact3:focus{
   color: var(--brand2-color);
 }
 .contact1:focus .icon2,
-.contact2:focus .icon2 {
+.contact2:focus .icon-tel {
   fill: var(--brand2-color);
 }
 .team-container2:focus {
@@ -109,24 +93,20 @@ section {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.link1.active,
-.link2.active,
-.link3.active,
+.link.active,
 .button1:active,
 .contact:active {
   color: var(--brand2-color);
 }
-.link1.active::after,
-.link2.active::after,
-.link3.active::after{
+.link.active::after{
   position: relative;
-    display: inline-block;
+    display: block;
     content: "";
     width: 100%;
     height: 4px;
-    /* top: 6px; */
     border-radius: 2px;
     background: var(--brand2-color);
+    box-sizing: initial;
 }
 .buttons:focus {
   background-color: var(--brand2-color);
@@ -146,6 +126,7 @@ section {
   color: var(--brand4-color);
   list-style: none;
   text-decoration: none;
+  padding-right: 10px;
 }
 .contact2 {
   font-family: 'Roboto';
@@ -216,16 +197,17 @@ section {
   pointer-events: none;
 }
 .backdrop{
-position: absolute;
+  position: absolute;
   width: 528px;
   height: 581px;
   left: 430px;
   top: 221px;
-  background: var(--brand3-color);
+  background-color: var(--brand3-color);
+  opacity: 1px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: scale(1.0);
 }
+.superposition
 .modal-close{
   box-sizing: border-box;
   position: absolute;
@@ -395,10 +377,20 @@ position: absolute;
   fill: var(--brand3-color);
 }
 .icon2 {
-  width: 16px;
-  height: 16px;
-  margin-left: 10px;
-  fill: var(--gray-color);
+    align-items: center;
+    display: inline-flex;
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+    margin-right: 10px;
+}
+.icon-tel {
+    align-items: center;
+    display: inline-flex;
+    width: 10px;
+    height: 16px;
+    fill: #757575;
+    margin-right: 10px;
 }
 .team-container{
   display: flex;
@@ -446,28 +438,7 @@ position: absolute;
   fill: var(--brand3-color);
 }
 .contact1:hover .icon2,
-.contact2:hover .icon2 {
-  fill: var(--brand2-color);
-}
-/* .icon4 {
-    width: 30px;
-    height: 30px;
-    fill: var(--brand3-color);
-}
-.modal-close:hover {
-  background-color: var(--brand2-color);
-}
-.modal-close:hover .icon4 {
-  fill: var(--brand3-color);
-}
-.modal-close:focus {
-  background-color: var(--brand2-color);
-}
-.modal-close:focus .icon4 {
-  fill: var(--brand3-color);
-} */
-.contact1:hover .icon2,
-.contact2:hover .icon2 {
+.contact2:hover .icon-tel {
   fill: var(--brand2-color);
 }
 .team-container2 {
