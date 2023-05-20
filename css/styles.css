@@ -99,7 +99,7 @@ section {
   color: var(--brand2-color);
 }
 .link.active::after{
-  position: relative;
+    position: relative;
     display: block;
     content: "";
     width: 100%;
@@ -196,18 +196,26 @@ section {
   opacity: 0;
   pointer-events: none;
 }
+.modal {  
+
+    position: absolute;
+      width: 528px;
+      height: 581px;
+      left: 430px;
+      top: 221px;
+      background-color: var(--brand3-color);
+      opacity: 1px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+}
 .backdrop{
   position: absolute;
-  width: 528px;
-  height: 581px;
-  left: 430px;
-  top: 221px;
-  background-color: var(--brand3-color);
-  opacity: 1px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 1024px;
+    background: rgba(0, 0, 0, 0.2);
 }
-.superposition
 .modal-close{
   box-sizing: border-box;
   position: absolute;
@@ -231,7 +239,6 @@ section {
   margin: 8px;
   padding: 6px 6px;
 }
-
 .text {
   font-style: normal;
   font-weight: 400;
