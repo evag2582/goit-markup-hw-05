@@ -215,6 +215,7 @@ section {
     width: 1600px;
     height: 1024px;
     background: rgba(0, 0, 0, 0.2);
+
 }
 .modal-close{
   box-sizing: border-box;
@@ -336,7 +337,7 @@ section {
   position: absolute;
     width: 370px;
     height: 70px;
-    top: 1562px;
+    top: 1591px;
     background: rgba(47, 48, 58, 0.8);
 }
 .bgimages-title{
